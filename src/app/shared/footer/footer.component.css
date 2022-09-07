@@ -1,0 +1,12 @@
+.footerIcon {
+    color: #8c8787;
+}
+.footerIcon:hover {
+    color: azure;
+}
+
+@media only screen and (max-width: 500px) {
+    .display-6 {
+      font-size: 1.5rem;
+    }
+  }
