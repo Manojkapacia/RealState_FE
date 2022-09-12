@@ -15,6 +15,7 @@ import { ContactComponent } from './view/contact/contact.component';
 import { SinglePropertyComponent } from './view/single-property/single-property.component';
 import { AboutComponent } from './view/about/about.component';
 import { SingleAgentComponent } from './view/single-agent/single-agent.component';
+  import { IvyCarouselModule } from 'angular-responsive-carousel';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { SingleAgentComponent } from './view/single-agent/single-agent.component
     ContactComponent,
     SinglePropertyComponent,
     AboutComponent,
-    SingleAgentComponent
+    SingleAgentComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,8 +40,9 @@ import { SingleAgentComponent } from './view/single-agent/single-agent.component
       positionClass: 'toast-top-right',
       preventDuplicates: true,
     }),
+    IvyCarouselModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
